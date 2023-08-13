@@ -7,4 +7,4 @@ def print_matrix_integer(matrix=[[]]):
             trans_row.append(i)
         trans.append(trans_row)
     for row in trans:
-        print(" ".join("{:d}".format(i) for i in row))
+        print("{:d}".format(i) for i in row))
