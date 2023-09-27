@@ -2,6 +2,7 @@
 """ Define Class MagicClass """
 import math
 
+
 class MagicClass:
     """ Class MagicClass """
     def __init__(self, radius=0):
@@ -10,7 +11,7 @@ class MagicClass:
     @property
     def radius(self):
         return (self.__radius)
-    
+
     @radius.setter
     def radius(self, value):
         if (not isinstance(value, int)):
