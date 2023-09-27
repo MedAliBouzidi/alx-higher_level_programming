@@ -52,7 +52,9 @@ class Square:
         string = ''
         for _ in range(self.__position[1]):
             string += ''
-        for _ in range(self.__size):
+        for idx in range(self.__size):
             string += " " * self.__position[0]
-            string += ("#" * self.size) + '\n'
+            string += ("#" * self.size)
+            if idx is not self.__size - 1:
+                string += '\n'
         return (string)
