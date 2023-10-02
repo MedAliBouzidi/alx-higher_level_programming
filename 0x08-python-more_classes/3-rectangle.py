@@ -42,7 +42,7 @@ class Rectangle:
 
     def __str__(self):
         if 0 in [self.__width, self.__height]:
-            return ("")
+            return ("\n")
         rect = ""
         for _ in range(self.__height):
             for _ in range(self.__width):
