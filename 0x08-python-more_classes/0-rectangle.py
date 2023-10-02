@@ -3,5 +3,6 @@
 
 
 class Rectangle:
-    def __init__(self) -> None:
+    """ Class Rectangle """
+    def __init__(self):
         pass
