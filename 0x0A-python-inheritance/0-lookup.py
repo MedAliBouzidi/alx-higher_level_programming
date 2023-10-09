@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Define an aboj attribute lookup function"""
+"""
+    returns the list of available attributes
+    and methods of an object
+"""
 
 
 def lookup(obj):
-    """
-     function that returns the list of
-     available attributes and
-     methods of an object:
-     """
+    """ returns the list of available attributes """
+
     return dir(obj)

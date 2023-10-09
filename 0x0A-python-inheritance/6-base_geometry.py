@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Define a calss"""
+""" Define a calss """
 
 
 class BaseGeometry:
-    """ init a class"""
+    """ init a class """
 
     def area(self):
         raise Exception("area() is not implemented")

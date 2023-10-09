@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Empty class"""
+""" Empty class """
 
 
 class BaseGeometry:
-    """Init empty class"""
+    """ Init empty class """
 
     pass
