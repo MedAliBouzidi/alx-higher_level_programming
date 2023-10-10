@@ -7,4 +7,3 @@ def read_file(filename=""):
         lines = f.readlines()
         for line in lines:
             print(line, end='')
-
