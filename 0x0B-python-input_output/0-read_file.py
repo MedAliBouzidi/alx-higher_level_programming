@@ -3,6 +3,8 @@
 
 
 def read_file(filename=""):
-    with open(filename, encoding="UTF8") as f:
+    """ Function to read from file """
+
+    with open(filename, 'r', encoding="utf-8") as f:
         date = f.read()
         print(date, end='')
