@@ -69,8 +69,15 @@ class Rectangle(Base):
     def display(self):
         """ print this instance with specific character """
 
+        if self.__width == 0 or self.__height == 0:
+            print("")
+            return
+
+        print(" " * self.__y)
         for r in range(self.__height):
-            print("#" * self.__width)
+            print(" " * self.__x, end="")
+            print("#" * self.__width, end="")
+            print("")
 
     def __str__(self):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"\
