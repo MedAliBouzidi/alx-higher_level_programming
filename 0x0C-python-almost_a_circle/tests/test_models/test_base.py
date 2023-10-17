@@ -375,7 +375,7 @@ class TestBase_load_from_file(unittest.TestCase):
         r2 = Rectangle(2, 4, 5, 6, 2)
         Rectangle.save_to_file([r1, r2])
         output = Rectangle.load_from_file()
-        self.assertTrue(all(isinstance(obj, Rectangle) for obj in output))
+        self.assertTrue(all(type(obj) is Rectangle for obj in output))
 
     def test_load_from_file_first_square(self):
         s1 = Square(5, 1, 3, 3)
