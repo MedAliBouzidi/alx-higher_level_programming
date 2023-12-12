@@ -9,7 +9,7 @@ for (let i = 0; i < size; i++) {
   for (let j = 0; j < size; j++) {
     square.push('X');
   }
-  if (i != size - 1) {
+  if (i !== size - 1) {
     square.push('\n');
   }
 }
