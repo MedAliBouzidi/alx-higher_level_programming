@@ -12,18 +12,18 @@ if __name__ == "__main__":
         print('<Usage>: ./5-filter_cities.py\
             [mysql_username] [mysql_password] [database name]\
             [state name]')
-
-    conn = MySQLdb.connect(host="localhost", port=3306,
-                           user=sys.argv[1], passwd=sys.argv[2],
-                           db=sys.argv[3], charset="utf8")
-    cur = conn.cursor()
-    cur.execute("SELECT c.id, c.name\
-                FROM cities AS c INNER JOIN states AS s\
-                ON s.id=c.state_id and s.name=%s ORDER BY id", (sys.argv[4], ))
-    rows = cur.fetchall()
-    res = []
-    for row in rows:
-        res.append(row[1])
-    print(', '.join(res))
-    cur.close()
-    conn.close()
+    else:
+        conn = MySQLdb.connect(host="localhost", port=3306,
+                               user=sys.argv[1], passwd=sys.argv[2],
+                               db=sys.argv[3], charset="utf8")
+        cur = conn.cursor()
+        cur.execute("SELECT c.id, c.name\
+                    FROM cities AS c INNER JOIN states AS s\
+                    ON s.id=c.state_id and s.name=%s ORDER BY id", (sys.argv[4], ))
+        rows = cur.fetchall()
+        res = []
+        for row in rows:
+            res.append(row[1])
+        print(', '.join(res))
+        cur.close()
+        conn.close()
