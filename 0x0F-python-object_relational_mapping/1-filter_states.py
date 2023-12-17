@@ -8,7 +8,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print('<Usage>: ./0-select_states.py\
+        print('<Usage>: ./1-filter_states.py\
             [mysql_username] [mysql_password] [database name]')
 
     conn = MySQLdb.connect(host="localhost", port=3306,
