@@ -23,5 +23,5 @@ if __name__ == "__main__":
             .filter(State.name == (sys.argv[4],)).first()
         try:
             print(instance.id)
-        except:
+        except AttributeError:
             print('Not found')
